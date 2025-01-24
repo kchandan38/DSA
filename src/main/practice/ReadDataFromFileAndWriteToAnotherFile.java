@@ -5,9 +5,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -31,7 +28,7 @@ public class ReadDataFromFileAndWriteToAnotherFile {
         try (PrintWriter pw = new PrintWriter(String.valueOf(Path.of("src/main/resources/employee_copy.csv")))) {
 
             emp.stream()
-                    .map(employee -> employee.getId() + "," + employee.getName() + "," + employee.getCityName()).forEach(line -> pw.write(line + "\n"));
+                    .map(employee -> employee.id() + "," + employee.name()+ "," + employee.cityName()).forEach(line -> pw.write(line + "\n"));
 
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
