@@ -2,6 +2,7 @@ package com.datastructure.graph.dijkstras;
 
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 // Given either DAG or Un directed Graph and weighted Graph
@@ -16,7 +17,7 @@ public class Lab18 {
         Arrays.fill(distance, Integer.MAX_VALUE);
 
         // Step2: Create Priority Queue
-        PriorityQueue<AdjacentNode> myqueue = new PriorityQueue<>((v1,v2)->v1.weight-v2.weight);
+        PriorityQueue<AdjacentNode> myqueue = new PriorityQueue<>(Comparator.comparingInt(v -> v.weight));
 
         // Step3: Initialize source vertex to zero
         distance[sourceVertex] = 0;
