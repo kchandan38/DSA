@@ -5,7 +5,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/Queue" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/SinglyLinkedList" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/DataStructure" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/FilesHandling" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/JavaVersions" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/Practice" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/Thread" isTestSource="false" />
     </content>
   </component>
 </module>
