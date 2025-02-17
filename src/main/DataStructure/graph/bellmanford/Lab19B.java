@@ -1,4 +1,4 @@
-package DataStructure.graph.bellmanford;
+package graph.bellmanford;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -22,9 +22,9 @@ public class Lab19B {
         // Step3:
         for (int i = 1; i < mygraph.vertex; i++) {
             for (MyEdge myEdge: mygraph.edgeList) {
-                int vertex1 = myEdge.sourceVertex;
-                int vertex2 = myEdge.destinationVertex;
-                int weight = myEdge.weight;
+                int vertex1 = myEdge.sourceVertex();
+                int vertex2 = myEdge.destinationVertex();
+                int weight = myEdge.weight();
                 if (distance.get(vertex2) > distance.get(vertex1) + weight) {
                     distance.put(vertex2, distance.get(vertex1) + weight);
                 }

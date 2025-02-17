@@ -1,4 +1,4 @@
-package DataStructure.graph.bellmanford;
+package graph.bellmanford;
 
 import java.util.ArrayList;
 

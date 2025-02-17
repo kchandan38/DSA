@@ -1,11 +1,4 @@
-package DataStructure.graph.bellmanford;
+package graph.bellmanford;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-
-@AllArgsConstructor
-public class MyEdge{
-    int sourceVertex;
-    int destinationVertex;
-    int weight;
+public record MyEdge(int sourceVertex, int destinationVertex, int weight){
 }

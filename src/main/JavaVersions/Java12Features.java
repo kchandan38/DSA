@@ -2,10 +2,8 @@ package JavaVersions;
 
 import java.io.FileNotFoundException;
 import java.lang.invoke.MethodHandles;
-import java.text.NumberFormat;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.Optional;
 
 public class Java12Features {
@@ -26,11 +24,11 @@ public class Java12Features {
                 "that spans multiple " +
                 "lines in Java code ";
 
-        NumberFormat fmt = NumberFormat.getCompactNumberInstance(Locale.of("HINDI","INDIA"), NumberFormat.Style.SHORT);
-        String result1 = fmt.format(1000000);
-        System.out.println(result1);
+      //  NumberFormat fmt = NumberFormat.getCompactNumberInstance(Locale.lookup, NumberFormat.Style.SHORT);
+      //  String result1 = fmt.format(1000000);
+     //   System.out.println(result1);
 
-        String str = "The courses\n available \n at javatpoint.";
+        String str = "The courses\n available \n at java t point.";
         System.out.println(str);
         System.out.println(str.indent(4));
 

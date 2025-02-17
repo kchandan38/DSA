@@ -1,4 +1,4 @@
-package DataStructure.graph.bellmanford;
+package graph.bellmanford;
 
 import java.util.Arrays;
 
@@ -19,9 +19,9 @@ public class Lab19 {
         // Step3:
         for (int i = 0; i < mygraph.vertex-1; i++) {
             for (MyEdge myEdge: mygraph.edgeList) {
-                int vertex1 = myEdge.sourceVertex;
-                int vertex2 = myEdge.destinationVertex;
-                int weight = myEdge.weight;
+                int vertex1 = myEdge.sourceVertex();
+                int vertex2 = myEdge.destinationVertex();
+                int weight = myEdge.weight();
 
                 if (distance[vertex2] > distance[vertex1] + weight) {
                     distance[vertex2] = distance[vertex1] + weight;

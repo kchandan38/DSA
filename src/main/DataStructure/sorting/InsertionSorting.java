@@ -1,4 +1,4 @@
-package DataStructure.sorting;
+package sorting;
 
 import java.util.ArrayList;
 import java.util.Arrays;
